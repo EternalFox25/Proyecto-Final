@@ -5,12 +5,14 @@ public class Definition {
     private String pinyin;
     private String definition;
 
+	//constructor
     public Definition (String character, String pinyin, String definition){
         this.character = character;
         this.pinyin = pinyin;
         this.definition = definition;
     }
 
+	//get y set
     /**
 	 * @param character
 	 */
@@ -47,7 +49,7 @@ public class Definition {
 		this.definition = definition;
 	}
 
-
+	//para mostrar todos los datos del objeto
     @Override
     public String toString() {
 		return "| " + character + " | " + pinyin + " | " + definition + " |";

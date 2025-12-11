@@ -1,8 +1,10 @@
 package com.testing;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import com.testing.enums.MenuOption;
+import com.testing.enums.SubMenu;
 import com.testing.models.*;
 
 public class App {
@@ -12,7 +14,7 @@ public class App {
         
         Scanner scan = new Scanner(System.in); //Creamos el objeto Scanner
         MenuOption choice;
-        CsvReader reader = new CsvReader();
+        int subChoice;
 
         do{
             MenuOption.showMenu();
@@ -21,15 +23,40 @@ public class App {
             //switch para imprimir el menu enum
             switch (choice) {
                 case RECOGNIZE:
-                        break;
+                    SubMenu.showMenu();
+                    try {
+                        subChoice = Integer.parseInt(scan.nextLine());//cambia el input del usuario a un int
+                        if (subChoice == 1) {
+                            RecognizeCharacters.recognizeOneCharacter(scan);
+                            break;  
+                        }if (subChoice == 2) {
+                            System.err.println("Esta opción todavía no esta disponible, por favor espere a una version actualizada del programa");
+                            break;
+                        }if (subChoice == 3) {
+                            RecognizeCharacters.recognizeAllCharacter(scan);
+                            break;
+                        }if (subChoice == 4) {
+                            break;
+                        }else{
+                            System.err.println("Por favor elija una opción valida");
+                            break;
+                        }
+                    } catch (Exception e) {
+                        System.err.println("Ha ocurrido un error");
+                        System.err.println(e);
+                    }
+                    
+                    
                     case WRITE:
                         break;
                     case SHOW:
                         try {
-                            reader.csvReaderShowTable();
-                        } catch (Exception e) {
-
+                            CsvReader.csvReaderShowTable();
+                        } catch (IOException e) {
+                            e.printStackTrace();
                         }break;
+                    case SCORE:
+                        break;
                     case EXIT:
                         System.err.println("祝你一天愉快 (Que tengas un buen dia)");
                         break;
