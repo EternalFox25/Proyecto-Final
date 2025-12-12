@@ -43,7 +43,7 @@ public class App {
                     System.err.println(Score.showScore(RecognizeCharacters.getCorrectAnswers(), RecognizeCharacters.getNumOfTries()));
                     break;
                 case EXIT:
-                        System.err.println("祝你一天 (Que tengas un buen dia)");
+                        System.err.println("祝你一天很好 (Que tengas un buen dia)");
                     break;
                 default:
                     System.err.println("Debes elegir entre 1 y " + MenuOption.values().length + ")");//si el usuario pone un numero pero ese numero esta por fuera del rango del enum

@@ -17,8 +17,7 @@ El objetivo de este proyecto es desarrollar una aplicación en Java/Maven aplica
 - Opcionalmente, pueden incorporar otros conceptos como **abstracción**, **herencia**, **polimorfismo**, **interfaces** y/o **enums**, si resultan apropiados para el contexto de la aplicación.
 ### ✅ Módulo: Unit Testing
 - Crear al menos **dos clases de test** que validen el comportamiento de los métodos desarrollados.
-- Los tests deberán estar etiquetados como **regression** o **smoke**, evaluando adecuadamente a qué suite corresponde cada uno.
-Crear **suites de ejecución** para cada tipo de test.
+- Los tests deberán estar etiquetados como **regression** o **smoke**, evaluando adecuadamente a qué suite corresponde cada uno. Crear **suites de ejecución** para cada tipo de test.
 - Incluir al menos un test que verifique el manejo de entradas vacías (*""*) o *null* .
 - Incluir al menos un test con **datos parametrizados**.
 - ***No es necesario testear la interacción por consola***
