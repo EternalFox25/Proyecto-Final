@@ -2,7 +2,7 @@ package com.testing.enums;
 
 public enum MenuOption {
     RECOGNIZE("Reconocer caracteres chinos"),
-    WRITE("Escribir caracteres chinos desde una descripción"), 
+    SEARCH("Buscar caracteres dando una definición"), 
     SHOW("Mostrar todos los caracteres en el programa y sus significados"),
     SCORE("Mostrar calificación actual"),
     EXIT("Salir del programa");

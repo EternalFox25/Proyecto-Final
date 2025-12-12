@@ -7,6 +7,6 @@ public final class UserInput {
         String value = scan.nextLine();//capturamos el input del usuario
         String valueNoSpaces = value.replaceAll("\\s", " ");//cambiamos todos los espacios extras que el usuario puede haber puesto y los cambiamos por uno solo
         String trimmedString = valueNoSpaces.trim();//sacamos todos los espacios extras al principios y final del String
-        return trimmedString;//devolvemos 
+        return trimmedString.toLowerCase();//devolvemos el string con una cantidad razonable de espacios y lo pasamos a lower case.
     }
 }
