@@ -10,6 +10,9 @@ public class SearchByDefinition {
         System.err.println("------- Que carácter estas buscando? -------");
         String userInput = UserInput.getUserInput(scan);
 
+        if (userInput.equals("ha ocurrido un error porque el scanner es null")) {
+            System.err.println(userInput);
+        }
         for (Definition definition : wordArray) {//
             if ((definition.getDefinition()).contains(userInput)) {//si el input del usuario existe como definición
                 System.err.println("Este character tiene esa definición " + definition.toString());
