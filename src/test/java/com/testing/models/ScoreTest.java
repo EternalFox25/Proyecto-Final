@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class ScoreTest {
 
     @ParameterizedTest
-    @Tag("regression")
+    @Tag("smoke")
     @CsvSource({
         /* correctAnswers , numOfTries */
             "2,5",

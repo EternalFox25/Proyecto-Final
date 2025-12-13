@@ -10,7 +10,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-
+/*Para esta clase lo que crea  */
 public class DefinitionTest {
     Definition def = new Definition(null, null,null);
 
@@ -26,7 +26,7 @@ public class DefinitionTest {
 
 
     @Test
-    @Tag("regression")
+    @Tag("smoke")
     @DisplayName("Este test verifica que tanto los métodos get y set de Definition están funcionando correctamente")
     void correctGetAndSet() {
         def = new Definition(null, null,null);
@@ -37,7 +37,7 @@ public class DefinitionTest {
     }
     
     @Test
-    @Tag("regression")
+    @Tag("smoke")
     @DisplayName("Si esta funcionando de forma correcta el método .toString de Definition ")
     void correctToString(){
         def = new Definition("一", "yī", "1,uno");

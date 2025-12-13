@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.NullSource;
 public class UserInputTest {
     @ParameterizedTest
     @NullSource
-    @Tag("regression")
+    @Tag("smoke")
     void nullScanner(Scanner scanner){
         assertTrue(UserInput.getUserInput(scanner).equals("ha ocurrido un error porque el scanner es null"));//el mensaje es en minúscula porque en UserInput se le aplica el .toLowerCase() a el string
     }//end nullScanner
