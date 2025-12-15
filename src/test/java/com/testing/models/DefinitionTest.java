@@ -26,7 +26,7 @@ public class DefinitionTest {
 
 
     @Test
-    @Tag("smoke")
+    @Tag("regression")
     @DisplayName("Este test verifica que tanto los métodos get y set de Definition están funcionando correctamente")
     void correctGetAndSet() {
         def = new Definition(null, null,null);
@@ -37,7 +37,7 @@ public class DefinitionTest {
     }
     
     @Test
-    @Tag("smoke")
+    @Tag("regression")
     @DisplayName("Si esta funcionando de forma correcta el método .toString de Definition ")
     void correctToString(){
         def = new Definition("一", "yī", "1,uno");
